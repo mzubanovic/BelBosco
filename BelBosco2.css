@@ -1,0 +1,87 @@
+
+
+body {
+	background-color: rgb(46,16,0);
+	background-image: url('http://www.textureking.com/content/img/stock/big/DSC_4264.JPG');	
+}
+
+header {		
+	width:100%;
+	height:20%;
+	font-size: 80px;
+	color:#FFFFFF;
+	font-family: 'Playball', cursive;
+	margin-left:5%; 
+	margin-top: 3px;
+
+}   
+
+
+#main{
+	background-image: url('http://www.textureking.com/content/img/stock/big/DSC_4264.JPG');
+	height:60%;
+	width:100%;
+	position:fixed;
+	overflow-y: auto;
+	border-bottom: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+	z-index:100;	
+}
+
+#headerWraper{
+	background-color: rgb(46,16,0);
+	height:120px;
+	width:100%;
+	border-bottom: 1px solid #FFFFFF;
+	background-image: url("http://imagizer.imageshack.us/v2/150x100q90/745/xR2uKp.jpg");
+	background-repeat: no-repeat;
+
+}
+
+#footer{
+	bottom:0%;
+	position: absolute;
+	height:20%;
+	width:100%;
+	background-color: rgb(46,16,0);
+	border-top: 1px solid #FFFFFF;
+}
+
+#about {
+	margin-top: 5%;    
+	margin-left: 10%;
+	color:#FFFFFF;
+	height:60%;	
+	position:fixed;
+}
+
+#gallery {
+	left: -10000px;    
+	z-index:10;
+	color:#FFFFFF;
+	height:60%;
+	width:100%;
+	position:fixed;
+	overflow-y: auto;	
+}
+
+#standard {   
+	z-index:10;
+	color:#FFFFFF;
+	height:400px;
+	width:100%;
+	position:fixed;
+	overflow-y: auto;
+}
+.navbar-default{
+	height: 2px;
+	min-height: 5px;
+	margin-right: 0px;
+	font-family: arial;
+	color:#FFFFFF;
+	
+	font-size: 12px;
+	background-color: rgb(46,16,0);
+	border-color: rgb(46,16,0);	
+	
+}
