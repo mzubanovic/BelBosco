@@ -1,30 +1,26 @@
- 
+
 <!DOCTYPE html>
 <html>
 
 <head>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="file:///home/marko/code/gallery/colorbox-master/example2">
-<link rel="stylesheet" type="text/css" href="css/colorbox.css"/>
+	<link rel="stylesheet" href="colorbox.css">
 	<link rel='stylesheet' href='BelBosco2.css'/>
-	
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
-	<script type="text/javascript" src="jquery.colorbox-min.js"></script>
-	 
-		
- 
-
 </head>
 <body>
-
-<div id="wraper">
-	<div id="headerWraper">
-		<div id="wraper">
-			<div id="headerWraper">
-				<nav class="navbar navbar-inverse navbar-manual navbar-fixed-top" role="navigation">
-					<ul class="nav navbar-nav" id="navigation">
-						<li>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="container">
+		<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div class="collapse navbar-collapse navHeaderCollapse">
+			<ul class="nav navbar-nav navbar-right" id="navigation">
+				<li>
 							<a href="file:///home/marko/code/BelBoscoGH/BelBosco/index.html">Home</a>
 						</li>
 						<li>
@@ -32,81 +28,122 @@
 						</li>
 						<li>
 							<a href="file:///home/marko/code/BelBoscoGH/BelBosco/contact.html">Contact</a>
-						</li>				
-					</ul>	
-				</nav>
-			</div>
-<div class="main">
-	<div id="gallery" class="main">
-	 	<a class='gallery' href="http://forums.techguy.org/attachments/211291d1341569009/pinguinalulu-tux-batman-penguin-11703.png">Photo_1</a>
-        <a class='gallery' href="http://tux.crystalxp.net/png/abuaziz-tux-van-helsing-1702.png">Photo_2</a>
-        <a class='gallery' href='http://tux.crystalxp.net/png/abuaziz-tux-van-helsing-1702.png'>Photo_3</a>
-    </div>   
-
-</div>
-
-</div>
-
-
-<h1>Colorbox Demonstration</h1>
-		<h2>Elastic Transition</h2>
-		<p><a class="group1" href="../content/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee.">Grouped Photo 1</a></p>
-		<p><a class="group1" href="../content/ohoopee2.jpg" title="On the Ohoopee as a child">Grouped Photo 2</a></p>
-		<p><a class="group1" href="../content/ohoopee3.jpg" title="On the Ohoopee as an adult">Grouped Photo 3</a></p>
-		
-		<h2>Fade Transition</h2>
-		<p><a class="group2" href="../content/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee">Grouped Photo 1</a></p>
-		<p><a class="group2" href="../content/ohoopee2.jpg" title="On the Ohoopee as a child">Grouped Photo 2</a></p>
-		<p><a class="group2" href="../content/ohoopee3.jpg" title="On the Ohoopee as an adult">Grouped Photo 3</a></p>
-		
-		<h2>No Transition + fixed width and height (75% of screen size)</h2>
-		<p><a class="group3" href="../content/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee.">Grouped Photo 1</a></p>
-		<p><a class="group3" href="../content/ohoopee2.jpg" title="On the Ohoopee as a child">Grouped Photo 2</a></p>
-		<p><a class="group3" href="../content/ohoopee3.jpg" title="On the Ohoopee as an adult">Grouped Photo 3</a></p>
-		
-		<h2>Slideshow</h2>
-		<p><a class="group4"  href="../content/ohoopee1.jpg" title="Me and my grandfather on the Ohoopee.">Grouped Photo 1</a></p>
-		<p><a class="group4"  href="../content/ohoopee2.jpg" title="On the Ohoopee as a child">Grouped Photo 2</a></p>
-		<p><a class="group4"  href="../content/ohoopee3.jpg" title="On the Ohoopee as an adult">Grouped Photo 3</a></p>
-		
-		<h2>Other Content Types</h2>
-		<p><a class='ajax' href="../content/ajax.html" title="Homer Defined">Outside HTML (Ajax)</a></p>
-		<p><a class='youtube' href="http://www.youtube.com/embed/VOJyrQa_WR4?rel=0&amp;wmode=transparent">Flash / Video (Iframe/Direct Link To YouTube)</a></p>
-		<p><a class='vimeo' href="http://player.vimeo.com/video/2285902" title="R&ouml;yksopp: Remind Me">Flash / Video (Iframe/Direct Link To Vimeo)</a></p>
-		<p><a class='iframe' href="http://wikipedia.com">Outside Webpage (Iframe)</a></p>
-		<p><a class='inline' href="#inline_content">Inline HTML</a></p>
-		
-		<h2>Demonstration of using callbacks</h2>
-		<p><a class='callbacks' href="../content/marylou.jpg" title="Marylou on Cumberland Island">Example with alerts</a>. Callbacks and event-hooks allow users to extend functionality without having to rewrite parts of the plugin.</p>
-		
-
-		<h2>Retina Images</h2>
-		<p><a class="retina" href="../content/daisy.jpg" title="Retina">Retina</a></p>
-		<p><a class="non-retina" href="../content/daisy.jpg" title="Non-Retina">Non-Retina</a></p>
-
-		<!-- This contains the hidden content for inline calls -->
-		<div style='display:none'>
-			<div id='inline_content' style='padding:10px; background:#fff;'>
-			<p><strong>This content comes from a hidden element on this page.</strong></p>
-			<p>The inline option preserves bound JavaScript events and changes, and it puts the content back where it came from when it is closed.</p>
-			<p><a id="click" href="#" style='padding:5px; background:#ccc;'>Click me, it will be preserved!</a></p>
-			
-			<p><strong>If you try to open a new Colorbox while it is already open, it will update itself with the new content.</strong></p>
-			<p>Updating Content Example:<br />
-			<a class="ajax" href="../content/ajax.html">Click here to load new content</a></p>
-			</div>
+						</li>
+			</ul>
 		</div>
+	</div>
+</nav>
 
+<div id="wrapper">
+		<div id="headerWraper">
+				
+		</div>
+	<div class="main container">
+		<div class="row">
+				<div class="col-sm-2">
+					<a class="group1" href="images/barka.jpg" title="Boat on the lake">
+						Boat on the lake<img src="images/thumbnails/barkaT.jpg" alt="Boatonthelake" class="thumbnail"/>
+					</a>
+				</div>
+				<div class="col-sm-2">
+					<a class="group1" href="images/blackandwhite.jpg" title="Ship - Black&White">
+						Ship - Black&White<img src="images/thumbnails/blackandwhiteT.jpg" alt="Ship - Black&White" class="thumbnail"/>
+					</a>
+				</div>
+				<div class="col-sm-2">
+					<a class="group1" href="images/brod1.jpg" title="Ship at sunset">
+						Ship at sunset<img src="images/thumbnails/brod1T.jpg" alt="Ship at sunset" class="thumbnail"/>
+					</a>
+				</div>
+				<div class="col-sm-2">
+					<a class="group1" href="images/brod2.jpg" title="Ship, grayscale">
+						Ship, grayscale<img src="images/thumbnails/brod2T.jpg" alt="Ship, grayscale" class="thumbnail"/>
+					</a>
+				</div>
+				<div class="col-sm-2">
+					<a class="group1" href="images/cres1.jpg" title="Cres 1">
+						Cres 1<img src="images/thumbnails/cres1T.jpg" alt="Cres1" class="thumbnail"/>
+					</a>
+				</div>
+				<div class="col-sm-2">
+					<a class="group1" href="images/cres2.jpg" title="Cres 2">
+						Cres 2<img src="images/thumbnails/cres2T.jpg" alt="Cres 2" class="thumbnail"/>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2">
+					<a class="group2" href="images/cres3.jpg" title="Cres 3">
+						Cres 3<img src="images/thumbnails/cres3T.jpg" alt="Cres 3" class="thumbnail"/>
+					</a>
+				</div>
+				<div class="col-sm-2">
+					<a class="group2" href="images/cres4.jpg" title="Cres 4">
+						Cres 4<img src="images/thumbnails/cres4T.jpg" alt="Cres 4" class="thumbnail"/>
+					</a>
+				</div>
+				<div class="col-sm-2">
+					<a class="group2" href="images/cres5.jpg" title="Cres 5">
+						Cres 5<img src="images/thumbnails/cres5T.jpg" alt="Cres 5" class="thumbnail"/>
+					</a>
+				</div>
+				<div class="col-sm-2">
+					<a class="group2" href="images/kamen1.jpg" title="Stone">
+						Stone house<img src="images/thumbnails/kamen1T.jpg" alt="Stone" class="thumbnail"/>
+					</a>
+				</div>
+				<div class="col-sm-2">
+					<a class="group2" href="images/kip1.jpg" title="Statue 1, Zagreb">
+						Statue 1, Zagreb<img src="images/thumbnails/kip1T.jpg" alt="Statue 1, Zagreb" class="thumbnail"/>
+					</a>
+				</div>
+				<div class="col-sm-2">
+					<a class="group2" href="images/kip2.jpg" title="Statue 2, Zagreb">
+						Statue 2, Zagreb<img src="images/thumbnails/kip2T.jpg" alt="Statue 2, Zagreb" class="thumbnail"/>
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-2">
+					<a class="group3" href="images/kip3.jpg" title="Statue 3, Zagreb">
+						Statue 3, Zagreb<img src="images/thumbnails/kip3T.jpg" alt="Statue 3, Zagreb" class="thumbnail"/>
+					</a>
+				</div>
+				<div class="col-sm-3">
+					<a class="group3" href="images/kolekcija.jpg" title="Collection">
+						Collection<img src="images/thumbnails/kolekcijaT.jpg" alt="collection" class="thumbnail"/>
+					</a>
+				</div>
+				<div class="col-sm-2">
+					<a class="group3" href="images/park.jpg" title="Park">
+						Park<img src="images/thumbnails/parkT.jpg" alt="Park" class="thumbnail"/>
+					</a>
+				</div>
+				<div class="col-sm-2">
+					<a class="group3" href="images/ribar.jpg" title="Fisherman">
+						Fisherman, mist<img src="images/thumbnails/ribarT.jpg" alt="Fisherman" class="thumbnail"/>
+					</a>
+				</div>
+				<div class="col-sm-2">
+					<a class="group3" href="images/sljeme.jpg" title="Sljeme">
+						Sljeme, Zagreb<img src="images/thumbnails/sljemeT.jpg" alt="Sljeme" class="thumbnail"/>
+					</a>
+				</div>
+			</div>
 
-<div id="footer"></div>
-
-
+	</div>
+	<footer>
+		<p><span>2014 &copy; Bel Bosco</span></p>
+	</footer>
+</div>
   			
 </body>
-
-
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script src="jquery.colorbox-min.js"></script>
 <script src="BelBosco2.js"></script>
-
+<script> 
+	$(document).ready(function(){
+		$(".group1").colorbox({rel:'group1'});
+	}); 
+</script>
 </html>
