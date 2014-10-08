@@ -2,7 +2,7 @@
 
 body {
 	background-color: rgb(46,16,0);
-	background-image: url('http://www.textureking.com/content/img/stock/big/DSC_4264.JPG');
+	background-image: url('/home/marko/code/BelBoscoGH/img/pozadinaBB.jpg');
  	background-repeat: no-repeat;
  	background-size:auto auto;
 }
@@ -15,14 +15,14 @@ header {
 	font-family: 'Playball', cursive;
 	margin-left:5%; 
 	margin-top: 3px;
-
 }   
+
 .row{
 	color:#FFFFFF;
 	padding: 5%;
 	margin-left:5%;
-
 }
+
 .main{
 	
 	background-color: rgba(46,16,0,0.7);
@@ -36,7 +36,7 @@ header {
 
 #headerWraper{
 	
-	height:120px;
+	height:155px;
 	width:100%;
 	background-image: url("");
 	background-repeat: no-repeat;
@@ -54,7 +54,7 @@ header {
 #about {
 	margin-top: 5%;    
 	margin-left: 10%;
-	background-color: rgba(46,16,0,0.7);
+	background-color: rgba(46,16,0,0.5);
 	color:#FFFFFF;
 	height:60%;	
 	position:fixed;
