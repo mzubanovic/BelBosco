@@ -130,3 +130,8 @@ footer p span {
 	height: 100%;
 	width: 100%;
 }
+iframe{
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.7);
+	padding: 10px;
+}
