@@ -1,5 +1,3 @@
-
-
 body {
 	background-color: rgb(46,16,0);
 	background-image: url('images/pozadinaBB.jpg');
@@ -134,4 +132,13 @@ iframe{
 	background: rgb(255, 255, 255);
 	background: rgba(255, 255, 255, 0.7);
 	padding: 10px;
+}
+input {
+    border-radius: 4px;
+    background: rgba(46,16,0,0.5);
+}
+
+textarea {
+	border-radius: 4px;
+	background: rgba(46,16,0,0.5);
 }

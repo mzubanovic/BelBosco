@@ -17,7 +17,7 @@
 				<div class="row gallery-row">
 					<div class="col-sm-2">
 						<a class="group1" href="images/barka.jpg" title="Boat on the lake">
-							Boat on the lake<img src="images/thumbnails/barkaT.jpg" alt="Boatonthelake" class="thumbnail"/>
+							Boat on the lake<img src="images/thumbnails/barkaT.jpg" alt="Boatonthelake" class="thumbnail"/>					
 						</a>
 					</div>
 					<div class="col-sm-2">
