@@ -17,35 +17,43 @@
 					<h2>You can contact me via contact form:</h2>
 					
 					<?php
-						$action=$_REQUEST['action'];
-						if ($action==""){
+						$action = $_REQUEST['action'];
+						$required = array('name', 'email', 'message');
+
+						foreach ($required as $value) {
+							$data[$value] = !empty($_REQUEST[$value]) ? $_REQUEST[$value] : '';
+						}
+
+						if ( 
+							empty($data['name']) || 
+							empty($data['email']) || 
+							empty($data['message']) 
+							) {
+								if(!empty($action)){
+	        						$message = 'All fields are required, please fill <a href="">the form</a> again.';
+								}
+        					} else {        
+        						$from="From: {$data['name']}<{$data['email']}>\r\nReturn-path: {$data['email']}";
+        						$subject="Message sent using your contact form";
+        						mail("belbosco.contact@gmail.com", $subject, $data['message'], $from);
+        						$message = "Email sent! <a href=\"\">Have another question?</a>";
+        						foreach ($required as $value) {
+        							$data[$value] = '';
+        						}
+        					}
+
     					?>
-    						<form  action="" method="POST" enctype="multipart/form-data">
-    							<input type="hidden" name="action" value="submit">
-   								Your name:<br>
-    							<input class="input" name="name" type="text" value="" size="30"/><br>
+						<form  action="" method="POST" enctype="multipart/form-data">
+							<input type="hidden" name="action" value="submit">
+								Your name:<br>
+							<input class="input" name="name" type="text" value="<?php echo $data['name']; ?>" size="30"/><br>
     							Your email:<br>
-    							<input class="input" name="email" type="text" value="" size="30"/><br>
+    							<input class="input" name="email" type="text" value="<?php echo $data['email']; ?>" size="30"/><br>
     							Your message:<br>
-    							<textarea class="input" name="message" rows="7" cols="30"></textarea><br>
+    							<textarea class="input" name="message" rows="7" cols="30"><?php echo $data['message']; ?></textarea><br>
     							<input id="submit" type="submit" value="Send email"/>
     						</form>
-    						<?php
-    					} else {
-    						$name=$_REQUEST['name'];
-    						$email=$_REQUEST['email'];
-    						$message=$_REQUEST['message'];
-    						if (($name=="")||($email=="")||($message=="")) {
-        						echo "All fields are required, please fill <a href=\"\">the form</a> again.";
-        					} else {        
-        						$from="From: $name<$email>\r\nReturn-path: $email";
-        						$subject="Message sent using your contact form";
-        						mail("belbosco.contact@gmail.com", $subject, $message, $from);
-        						echo "Email sent! <a href=\"\">Have another question?</a>";
-        					}
-    					}  
-						?>
-
+    						<?php echo $message; ?>
 					<h2>... or you can:</h2>
 					<h4><a href="https://www.facebook.com/dratrwork?fref=ts" target="_blank">Find me on Facebook!</a></h4>
 				</div>
