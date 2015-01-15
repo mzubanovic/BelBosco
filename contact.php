@@ -54,8 +54,14 @@
     							<input id="submit" type="submit" value="Send email"/>
     						</form>
     						<?php echo $message; ?>
-					<h2>... or you can:</h2>
-					<h4><a href="https://www.facebook.com/dratrwork?fref=ts" target="_blank">Find me on Facebook!</a></h4>
+    				<div class="col-md-6">
+						<h2>... or you can:</h2>
+						<h4><a href="https://www.facebook.com/dratrwork?fref=ts" target="_blank">Find me on Facebook!</a></h4>
+					</div>
+					<div class="col-md-6">
+						<h2> ... and:</h2>
+						<h4><a href="https://www.etsy.com/shop/BelBosco?ref=hdr_shop_menu" target="_blank">Visit my shop on Etsy!</a></h4>
+					</div>
 				</div>
 				<div class="col-md-6">
 					<h2>... Also, you can contact my contributors:<h2>
